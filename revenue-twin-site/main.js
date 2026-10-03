@@ -59,7 +59,7 @@ function updateStats(stats) {
   count.textContent = Number(stats.completed).toLocaleString();
   const change = stats.averageChange;
   detail.textContent = change == null ? 'No completed analyses yet.' :
-    `Average suggested change: ${change >= 0 ? '+' : '−'}$${Math.abs(change)} per night across completed analyses. This is not realised income.`;
+    `Average suggested change: ${change >= 0 ? '+' : '−'}$${Math.abs(change)} per night across completed rate checks. This is not realised income.`;
 }
 
 try {
